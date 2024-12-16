@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:background="#3000FF00"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:id="@+id/content_music"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:weightSum="2"
+        tools:background="#300000FF">
+
+        <ImageView
+            android:id="@+id/musicIcon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="4dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_album"
+            app:tint="?android:textColorPrimary" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/music_songname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_artist"
+                    android:textAppearance="@style/MwmTextAppearance.NavMenu.Song"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/music_artistname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_song"
+                    android:textAppearance="@style/MwmTextAppearance.NavMenu.Artist"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="4dp"
+                android:background="@color/base_accent_transparent"
+                android:src="@drawable/ic_rewind"
+                app:tint="?android:textColorPrimary"></ImageButton>
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@color/base_accent_transparent"
+                android:src="@drawable/ic_play"
+                app:tint="?android:textColorPrimary"
+                android:layout_margin="4dp"></ImageButton>
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@color/base_accent_transparent"
+                android:src="@drawable/ic_forward"
+                app:tint="?android:textColorPrimary"
+                android:layout_margin="4dp"></ImageButton>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -2,9 +2,13 @@
 <resources>
     <!-- SECTION: Strings -->
     <!-- Button text (should be short) -->
+
     <string name="back">Back</string>
     <!-- Button text (should be short) -->
     <string name="cancel">Cancel</string>
+    <!-- Default music control string -->
+    <string name="default_artist">Lorem Ipsum</string>
+    <string name="default_song">Dolor Sit Amet</string>
     <!-- Button which deletes downloaded country -->
     <string name="delete">Delete</string>
     <string name="download_maps">Download Maps</string>

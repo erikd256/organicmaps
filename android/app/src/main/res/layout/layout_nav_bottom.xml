@@ -17,8 +17,8 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true">
-
     <include layout="@layout/bottom_sheet_handle" />
+    <include layout="@layout/layout_nav_bottom_audiocontrol" />
     <include layout="@layout/layout_nav_bottom_numbers" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -74,4 +74,15 @@
       android:textAppearance="@style/MwmTextAppearance.Button.Red"
       tools:ignore="UnusedAttribute" />
   </LinearLayout>
+
+  <com.google.android.material.progressindicator.LinearProgressIndicator
+      android:id="@+id/music_progress"
+      style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:indicatorColor="?colorAccent"
+      app:trackCornerRadius="@dimen/nav_progress_head"
+      app:trackThickness="@dimen/nav_progress"
+      app:trackColor="@color/bg_routing_progress" />
+
 </LinearLayout>

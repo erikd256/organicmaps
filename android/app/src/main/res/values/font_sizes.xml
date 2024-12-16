@@ -60,6 +60,8 @@
   <dimen name="text_size_nav_number">24sp</dimen>
   <dimen name="text_size_nav_dimension">20sp</dimen>
   <dimen name="text_size_nav_menu_number">28sp</dimen>
+  <dimen name="text_size_nav_menu_song">20dp</dimen>
+  <dimen name="text_size_nav_menu_artist">10dp</dimen>
   <dimen name="text_size_nav_menu_dimension">16sp</dimen>
 
   <dimen name="text_size_banner">8sp</dimen>
