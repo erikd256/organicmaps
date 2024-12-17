@@ -2,6 +2,9 @@ package app.organicmaps;
 
 import android.content.Context;
 import android.service.notification.NotificationListenerService;
+import android.service.notification.StatusBarNotification;
+import android.util.Log;
+
 import androidx.core.app.NotificationManagerCompat;
 
 public class NotificationListener extends NotificationListenerService {
